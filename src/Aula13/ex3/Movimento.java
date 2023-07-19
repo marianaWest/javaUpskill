@@ -27,9 +27,6 @@ public class Movimento {
 
     @Override
     public String toString() {
-        return "Movimento{" +
-                "descricao='" + descricao + '\'' +
-                ", valor=" + valor +
-                '}';
+        return descricao + ";" + valor;
     }
 }

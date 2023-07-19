@@ -1,0 +1,4 @@
+almoço;12.0
+lanche;5.0
+jantar;20.0
+presente;30.0

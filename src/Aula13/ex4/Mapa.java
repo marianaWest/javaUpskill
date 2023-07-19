@@ -14,16 +14,14 @@ public class Mapa {
                 String line = scanner.nextLine();
                 String[] colunas = line.split("");
                 String novaLinha = "";
-               for (int i = 0; i < colunas.length; i++) {
-                    if(colunas[i].equals("#") ) {
-                        colunas[i] = "W";
+                for(String coluna : colunas) {
+                    if(coluna.equals("#")) {
+                        novaLinha += "W";
                     } else {
-                        colunas[i] = " ";
+                        novaLinha += " ";
                     }
                 }
-                for (int i = 0; i < vetor.length; i++) {
-                    System.out.println(vetor[i]);
-                }
+                System.out.println(novaLinha);
             }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
