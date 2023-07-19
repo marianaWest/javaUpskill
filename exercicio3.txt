@@ -1,0 +1,6 @@
+
+Mariana34
+ana 34
+nome: Joana idade: 65
+nome: Luis, idade: 45
+nome: Luisa, idade: 34
