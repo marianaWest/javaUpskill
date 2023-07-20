@@ -16,6 +16,29 @@ public class Room {
    public int getRoomCapacidade() {
         return roomCapacidade;
    }
+ public void addStudent(Student student) {
+     for (int i = 0; i < roomCapacidade; i++) {
+         if(students[i] == null) {
+             students[i] = student;
+             break;
+         }
+     }
+ }
+public void removeStudent(int number) {
+    for (int i = 0; i < students.length; i++) {
+        if(students[i] != null) {
+            if(students[i].getStudentNumber() == number) {
+                students[i] = null;
+            }
+        }
+    }
+
+}
 
 
+ public void listStudents() {
+     for (int i = 0; i < students.length; i++) {
+         System.out.println(students[i]);
+     }
+ }
 }

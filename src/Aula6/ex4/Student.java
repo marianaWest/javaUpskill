@@ -18,6 +18,10 @@ public class Student {
         this.studentCourse = studentCourse;
     }
 
+    public int getStudentNumber() {
+        return studentNumber;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
